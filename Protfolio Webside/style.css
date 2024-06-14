@@ -1,0 +1,338 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif; 
+}
+.protfolio-container{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+
+}
+.navlist li{
+   list-style: none;
+}
+.navlist li a{
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 1rem;
+   color: #fff;
+   position: reletive;
+}
+.left-container, .right-container{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+.left-container{
+   background: #262525;
+   width: 70%;
+   padding-left: 3rem;
+
+}
+.right-container{
+ background: linear-gradient(-45deg,  #3877ff, #262525 70%);
+ width: 30%;
+}
+.icons .fa-brands{
+   color: #bbb;
+   font-size: 1.7rem;
+}
+.icons{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   gap: 3rem;
+}
+.content{
+   margin-left: 4rem;
+}
+.content h2{
+      font-size: 1.9rem;
+        color: #fff;
+}
+
+      .content h1{
+           font-size: 3rem;
+               color: #8623be;
+}
+    .content h3{
+       font-size: 1.9rem;
+       color: #8623be;
+}
+.content .detail{
+   font: size 1.5rem;
+   color: #fff;
+   max-width: 38rem;
+   margin: 1.5rem 0 3rem 0;
+   line-height:1.8rem;
+}
+.btn-container button{
+      border: .2rem solid #5db9ee;
+      font-size: 1.1rem;
+      padding: .6rem 1.5rem;
+      border-radius: .5rem;
+       cursor: pointer;
+       transition: .5s ease;
+   }
+button:nth-child(1){
+    background: #5DB9EE;
+   
+}
+button:nth-child(1):hover{
+   background:transparent;
+   color:#5DB9EE
+}
+
+.icons .fa-brands:hover{
+   cursor: pointer;
+   background: linear-gradient(#fff , #90a9df);
+   -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+}
+.design .circle{
+   aspect-ratio: 1;
+   position: absolute;
+   border-radius: 50%;
+   top: 50%;
+   left: 70%;
+   transform: translate(-50%, -50%);
+
+}
+.circle:nth-child(1){
+   background: linear-gradient(90deg, transparent 50%, #262525 50%);
+   width: 38rem;
+}
+.circle:nth-child(2){
+   width: 30rem;
+   background-image: url("image/IMG20230610103100.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   border: .1rem solid white;
+   box-shadow: 
+   0 0 1rem #fff,
+   inset 0 0 1rem #fff,
+   0 0 2rem  #3877ff,
+   inset 0 0 2rem #3877ff,
+   0 0 4rem #3877ff,
+   inset 0 0 4rem  #3877ff;
+}
+
+section{
+   padding: 6rem 0;
+   background: #262525;
+}
+
+section.about .about-me-img{
+ height:550px;
+ float: right;
+border-radius: 30px;
+}
+section.about h1{
+   margin-bottom: 2rem;
+   font-size: 1.6rem;
+   font-weight:400;
+   color: #fff;
+}
+section.about h3{
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 150px;
+      color: #8623be;
+}
+section.about h2{
+   font: size 45px;
+   color: #fff;
+   line-height: 1.9;
+}
+
+
+.skill {
+    padding: 50px 0;
+    display: flex;
+    background: #262525;
+    color: #fff;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container1 {
+    width: 600px;
+    margin: 20px;
+    text-align: center;
+}
+#skill{
+   font-size: 50px;
+   font-weight: bold;   
+   color: aqua;
+}
+
+.heading, .heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.heading1 {
+    margin-top: 30px;
+}
+
+.technical-bars .bar {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.technical-bars .bar i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.technical-bars .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+.technical-bars .bar .progress-line {
+    flex: 1;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.technical-bars .bar .progress-line span {
+    display: block;
+    height: 100%;
+    background-color: rgb(0, 179, 255);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animateProgress 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 88%;
+}
+
+.progress-line.javascript span {
+    width: 85%;
+}
+
+.progress-line.python span {
+    width: 60%;
+}
+
+.progress-line.react span {
+    width: 65%;
+}
+
+@keyframes animateProgress {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.radial-bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.radial-bar {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.radial-bar svg {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+}
+
+.radial-bar .progress-bar {
+    fill: none;
+    stroke: #555;
+    stroke-width: 10;
+}
+
+.radial-bar .path {
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    animation: radialProgress 1.5s ease-out forwards;
+}
+
+.path.creativity {
+    stroke: rgb(0, 102, 255);
+    stroke-dashoffset: calc(502 * (1 - 0.65));
+}
+
+.path.communication {
+    stroke:  rgb(0, 102, 255);
+    stroke-dashoffset: calc(502 * (1 - 0.85));
+}
+
+.path.problem-solving {
+    stroke:  rgb(0, 102, 255);
+    stroke-dashoffset: calc(502 * (1 - 0.80));
+}
+
+.path.teamwork {
+    stroke:  rgb(0, 102, 255);
+    stroke-dashoffset: calc(502 * (1 - 0.80));
+}
+
+@keyframes radialProgress {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+}
+
+.radial-bar .text {
+    margin-top: 10px;
+    font-size: 1rem;
+}
